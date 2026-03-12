@@ -1,0 +1,10 @@
+# Abaikan folder data hasil streaming
+data/serving/stream/
+
+# Abaikan file metadata Spark
+**/_spark_metadata/
+**/*.crc
+
+# Abaikan virtual environment
+venv/
+.env
