@@ -1,10 +1,17 @@
-# Abaikan folder data hasil streaming
-data/serving/stream/
-
-# Abaikan file metadata Spark
+# Abaikan semua folder output dan metadata
+**/stream_data/
+**/realtime_output/
 **/_spark_metadata/
-**/*.crc
 
-# Abaikan virtual environment
+# Abaikan file sampah sistem dan data part
+**/*.crc
+**/part-*
+**/.ipynb_checkpoints/
+
+# Abaikan environment
 venv/
 .env
+
+data/
+*.tgz
+__pycache__/
